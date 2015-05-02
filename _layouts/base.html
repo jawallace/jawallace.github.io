@@ -19,7 +19,9 @@
 	{% include footer.html %}
 
 	<script>
-		window.onscroll=function(){document.getElementById('navbar').setAttribute('class', (window.pageYOffset>5?'fixednav clearfix':'clearfix'));}
+		window.onscroll=function(){
+			document.getElementById('navbar').setAttribute('class', (window.pageYOffset>5?'fixednav clearfix':'clearfix'));
+		}
 	</script>
 	
 	<script>
