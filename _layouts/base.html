@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<title>{{ title }}</title>
+	<meta content="width=device-width" name="viewport">
+	<link rel="stylesheet" href="/css/stickymenu.css">
+</head>
+
+<body>
+
+	{% include nav.html %}
+
+	<div id="container">
+	  {{ content }}
+	</div>
+
+	{% include footer.html %}
+
+	<script>
+		window.onscroll=function(){document.getElementById('navbar').setAttribute('class', (window.pageYOffset>5?'fixednav clearfix':'clearfix'));}
+	</script>
+	
+	<script>
+	(function() {
+		var $body = document.body
+		, $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+		if ( typeof $menu_trigger !== 'undefined' ) {
+			$menu_trigger.addEventListener('click', function() {
+				$body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
+			});
+		}
+	}).call(this);
+	</script>
+
+</body>
+</html>

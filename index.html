@@ -1,55 +1,8 @@
-<!DOCTYPE html>
-<html class="no-js">
-<head>
-	<meta charset="utf-8">
-	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	<title>Jeff Wallace</title>
-	<meta content="width=device-width" name="viewport">
-	<link rel="stylesheet" href="css/stickymenu.css">
-</head>
-
-<body>
-	<div class="menu-trigger"></div>
-	
-	<nav id="navbar">
-		<ul>
-			<li><a href="index.html" class="active">Home</a></li>
-			<li><a href="about">About</a></li>
-			<li><a href="blog">Blog</a></li>
-			<li><a href="resume">Resume</a></li>
-		</ul>
-	</nav>
-
-	<div id="container">
-	  All the content!	
-	</div>
-
-	<div id="bottom-nav">
-		<nav>
-			<ul>
-            	<li><a href="https://github.com/jawallace"><img src="assets/github.png"/></a></li>
-            	<li><a href="https://linkedin.com/in/jeffawallace"><img src="assets/linkedin.png"/></a></li>
-            	<li><a href="https://twitter.com/jwall1661"><img src="assets/twitter.png"/></a></li>
-        	</ul>
-        </nav>
-    </div>
-
-	<script>
-		window.onscroll=function(){document.getElementById('navbar').setAttribute('class', (window.pageYOffset>5?'fixednav clearfix':'clearfix'));}
-	</script>
-	
-	<script>
-	(function() {
-		var $body = document.body
-		, $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
-
-		if ( typeof $menu_trigger !== 'undefined' ) {
-			$menu_trigger.addEventListener('click', function() {
-				$body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
-			});
-		}
-	}).call(this);
-	</script>
-
-</body>
-</html>
+---
+layout: base
+title: Jeff Wallace
+active: home
+---
+<p>
+All the content!
+</p>

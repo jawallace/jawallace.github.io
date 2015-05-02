@@ -1,0 +1,10 @@
+	<div class="menu-trigger"></div>
+	
+	<nav id="navbar">
+		<ul>
+			<li><a href="index.html" id="home_a" {% if page.active == "home" %} class="active" {% endif %} >Home</a></li>
+			<li><a href="about" id="about_a" {% if page.active == "about" %} class="active" {% endif %} >About</a></li>
+			<li><a href="blog" id="blog_a" {% if page.active == "blog" %} class="active" {% endif %} >Blog</a></li>
+			<li><a href="resume" id="resume_a" {% if page.active == "resume" %} class="active" {% endif %} >Resume</a></li>
+		</ul>
+	</nav>
