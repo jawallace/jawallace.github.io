@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	<title>{{ title }}</title>
+	<title>{{ page.title }} | Jeff Wallace</title>
 	<meta content="width=device-width" name="viewport">
 	<link rel="stylesheet" href="/css/stickymenu.css">
 </head>
@@ -18,13 +18,16 @@
 
 	{% include footer.html %}
 
-	<script>
+    <script>
+        /*
 		window.onscroll=function(){
 			document.getElementById('navbar').setAttribute('class', (window.pageYOffset>5?'fixednav clearfix':'clearfix'));
-		}
+        }
+        */
 	</script>
 	
-	<script>
+    <script>
+        /*
 	(function() {
 		var $body = document.body
 		, $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
@@ -34,7 +37,8 @@
 				$body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
 			});
 		}
-	}).call(this);
+    }).call(this);
+        */
 	</script>
 
 </body>

@@ -1,8 +1,21 @@
 ---
 layout: base
-title: Jeff Wallace
+title: Home
 active: home
 ---
+<h2>Welcome to my personal page!</h2>
+
 <p>
-All the content!
+This is a site where you can find out a little bit <a href="/about">about me</a>, my <a href="/resume">professional experience</a>, and where I will <a href="/blog">blog</a> about a variety of things, including software development, community service, philosophy, and ice hockey. Feel free to contact me with questions, comments, or suggestions.
 </p>
+
+<p>
+Enjoy!
+</p>
+
+<p>Recent Posts:</p>
+<ul>
+	{% for post in site.posts limit:3 %}
+	<li><a href="{{ post.url }}">{{ post.title }} ({{ post.date | date: '%B %d, %Y' }})</a></li>
+	{% endfor %}
+</ul>

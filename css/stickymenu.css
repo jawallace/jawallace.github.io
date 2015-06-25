@@ -7,6 +7,11 @@ body {
 	background-color: #EEE;
 }
 
+a#home_a {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
 .clearfix:before, .clearfix:after {
 	content: " "; display: table;
 }
@@ -25,11 +30,16 @@ body {
 	margin: auto;
 	background-color: #fefefe;
 	color: #242B30;
-	padding: 55px 1%;
+	padding: 5% 2% 2% 2%;
 }
 
-#container h1 {font-size: 1.8em;}
-#container h2 {font-size: 1.35em;}
+#container h1 {
+	font-size: 1.8em;
+}
+
+#container h2 {
+	font-size: 1.35em;
+}
 
 #navbar {
 	width: 70%; /* Should be same width as content container */
@@ -47,10 +57,16 @@ body {
 	transition: all 1s ease;
 }
 
-#bottom-nav nav {
+#bottom-nav {
 	width: 70%;
 	text-align: center;
 	margin: auto;
+	font-size: 0.75em;
+}
+
+#bottom-nav a,
+#bottom-nav a:visited {
+	color: black;
 }
 
 nav#navbar {
@@ -69,6 +85,8 @@ nav#navbar {
 
 #bottom-nav nav ul li {
 	display: inline-block;
+	padding-left: .5em;
+	padding-right: .5em;
 }
 
 nav ul {
@@ -82,6 +100,7 @@ nav#navbar ul li {
 	margin: 0;
 	padding: 8px;
 	display: inline-block;
+	font-size: .9em;
 }
 
 nav ul li a {
@@ -159,7 +178,7 @@ nav ul li a:visited {
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		height: 5%;
+		height: 7%;
 		overflow: hidden;
 	}
 
@@ -222,7 +241,7 @@ nav ul li a:visited {
 		position: fixed;
 		top: 0; left: 0;
 		width: 100%;
-		height: 94%;
+		height: 92%;
 		padding: 0 1% 1% 43px;
 		overflow: scroll;
 	}
@@ -234,7 +253,7 @@ nav ul li a:visited {
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		height: 4%;
+		height: 7%;
 		overflow: hidden;
 	}
 
@@ -261,5 +280,9 @@ nav ul li a:visited {
 		text-transform: none;
 		line-height: 30px;
 		color: #fff;
+	}
+
+	nav ul li a.active {
+	border-bottom: 2px solid white;
 	}
 }
